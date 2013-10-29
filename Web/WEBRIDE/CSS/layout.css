@@ -1,0 +1,211 @@
+body
+{
+	font-family:Arial;
+	font-size:11px;
+}
+input
+{
+	font-family:Arial;
+	font-size:11px;
+}
+select
+{
+	font-family:Arial;
+	font-size:11px;
+}
+textarea
+{
+	font-family:Arial;
+	font-size:11px;
+}
+
+
+.STYLE1 {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+}
+.STYLE2 {
+	font-family: Arial;
+	font-size: 11px;
+	
+	font-weight: bold;
+}
+.STYLE3 {
+	font-size: 16px;
+	color: #FF0000;
+}
+
+.font1
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.font2
+{
+	font-family:Arial;
+	font-size:12px;
+	color:Green;
+}
+.font3
+{
+	font-family:Arial;
+	font-size:11px;
+	color:blue;
+}
+.form_new
+{
+	font-family:Arial;
+	font-size:12px;
+	color:#000000;
+	 font-weight:bold
+}
+body,form
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+body, table 
+{
+	font-family:Arial,Georgia,  Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+/*add by joey	11/13/2007*/
+.css_header
+{
+	font-family:Arial;
+	font-size:15px;
+	font-weight :bold;
+	height: 35px;
+	text-align:left;
+	margin-left:50px;		
+	padding-top:10px;
+	
+}
+
+.css_title
+{
+	background-color:#c0c0c0;
+	font-size:11px;
+	font-weight :bold;
+	height: 24px;
+	text-align:left;
+}
+.css_desc 
+{	
+    font-family:Corbel;
+    background-color:#018bd3;
+    border:solid 0px #ffffff;
+    padding:2px;
+    color:#FFFFFF;
+    font-size:10pt;
+    font-weight :bold;
+    height: 23px;width: 130px;
+    text-align:left;
+    width:40%;	
+	/*font-family: Arial, Helvetica, sans-serif;
+	background-color:#3269d3;
+	border:solid 0px #ffffff;
+	padding:2px;
+	text-align:left;
+	height: 23px;width: 130px;
+	font-weight:bold;
+	font-size: 12px;
+	color: #FFFFFF;	*/
+}
+.css_alterdesc
+{
+	font-family:Arial;
+	font-size:11px;
+	background-color:#e7e7e7;
+	border:solid 0px #6699cc;
+	padding:2px;
+	text-align:left;
+}
+.css_itemdesc
+{
+	font-family:Arial;
+	font-size:11px;
+	background-color:#f9f9f9;
+	border:solid 0px #6699cc;
+	padding:2px;
+	text-align:left;
+}
+
+.css_grayed
+{
+	background-color:#d3d3d3;
+}
+
+.css_stoptitle
+{
+    font-family:Calibri;
+    font-size:14pt;
+    /*font-weight :bold;*/
+    text-align:left;
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+
+.frequent_font
+{
+    font-family:Arial;
+    color:#ffffff;
+    font-size:11px;
+    font-weight :bold;
+    text-align:left;
+    text-decoration: none;	    
+}
+
+/*	AlephWeb Header Menu Cell Style	*/
+.HeaderMenuCell
+{
+	BORDER-RIGHT: gray 1px solid;
+	BORDER-TOP: gray 1px solid;
+	BORDER-LEFT: gray 1px solid;
+	BORDER-BOTTOM: gray 1px solid;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#018bd3;
+	text-align:center;
+	color:white;
+	cursor:hand;
+	font-size:9pt;
+	font-weight:bold;
+	font-family:Corbel;
+	/*BORDER-RIGHT: gray 1px solid;
+	BORDER-TOP: gray 1px solid;
+	BORDER-LEFT: gray 1px solid;
+	BORDER-BOTTOM: gray 1px solid;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#3269d3;
+	text-align:center;
+	color:white;
+	cursor:hand;
+	font-size:10px;
+	font-weight:bold;*/
+}
+.HeaderMenuCellOn
+{
+	/*	Header menu when mouse was hover on */
+	BORDER-RIGHT: gray 1px solid;
+	BORDER-TOP: gray 1px solid;
+	BORDER-LEFT: gray 1px solid;
+	BORDER-BOTTOM: gray 1px solid;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:yellow;
+	text-align:center;
+	color:black;
+	cursor:hand;
+}
+
+/* loading message (joey)	*/
+.css_loadingprogress{width:800px; top:250px; text-align:center; font-size:16px; color:green;}

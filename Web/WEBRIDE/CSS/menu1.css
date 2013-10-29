@@ -1,0 +1,115 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/drop_examples.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+ /* common styling */
+.menu1 {
+float:left; width:100%; font-family: Arial; font-size:11px;text-decoration: none; font-weight: normal;
+background:url(images/topmenu-bg.jpg) repeat-x top left; 
+/*border-top:3px solid #4c597f;  border-bottom:3px solid #4c597f;*/
+margin:0 0 0px 0; /* for this demo only */ 		
+}
+.menu1 ul {
+padding:0;margin:0;list-style-type:none;
+}
+.menu1 ul li {
+float:left; position:relative; background:url(images/topmenu-bg.jpg) no-repeat top right;
+}
+.menu1 ul li a, .menu1 ul li a:visited {
+float:left; display:block; text-decoration:none;color:#ffffff; padding:0px 0px; line-height:23px; height:25px; /*border-bottom:3px solid #fff; */
+}
+
+.menu1 ul li:hover {width:auto;}
+
+.menu1 ul li a.menu1one:hover {border-color:#c00; color:#f88;}
+.menu1 ul li a.menu1two:hover {border-color:#c60; color:#fc0;}
+.menu1 ul li a.menu1three:hover {border-color:#cc0; color:#cc0;}
+.menu1 ul li a.menu1four:hover {border-color:#080; color:#0e0;}
+.menu1 ul li a.menu1five:hover {border-color:#00c; color:#aaf;}
+.menu1 ul li a.menu1six:hover {border-color:#c0c; color:#f8f;}
+.menu1 ul li a.menu1seven:hover {border-color:#c00; color:#f88;}
+.menu1 ul li a.menu1eight:hover {border-color:#c80; color:#0e0;}
+
+.menu1 ul li:hover a.menu1one {border-color:#c00; color:#f88;}
+.menu1 ul li:hover a.menu1two {border-color:#c60; color:#fc0;}
+.menu1 ul li:hover a.menu1three {border-color:#cc0; color:#cc0;}
+.menu1 ul li:hover a.menu1four {border-color:#080; color:#0e0;}
+.menu1 ul li:hover a.menu1five {border-color:#00c; color:#aaf;}
+.menu1 ul li:hover a.menu1six {border-color:#c0c; color:#f8f;}
+.menu1 ul li:hover a.menu1seven {border-color:#c00; color:#f88;}
+.menu1 ul li:hover a.menu1eight {border-color:#c80; color:#0e0;}
+
+.menu1 ul li ul {
+display: none;
+}
+.menu1 table {
+margin:0; border-collapse:collapse; font-size:11px; position:absolute; top:0; left:0;
+}
+
+/* specific to non IE browsers */
+.menu1 ul li:hover ul {
+display:block;position:absolute;top:22px;margin-top:1px; left:0;width:137px;border-bottom:0px solid #000;
+}
+.menu1 ul li:hover ul.endstop {
+left:-92px;
+}
+.menu1 ul li:hover ul li ul {
+display: none;
+}
+.menu1 ul li:hover ul li a {
+display:block;background:#151B11;color:#ffffff;height:auto;line-height:10px;padding:4px 16px; width:137px; border:1px solid #000; border-bottom:0;
+}
+.menu1 ul li:hover ul li a.drop {
+/*background:#ccd url(images/bullet1.gif) no-repeat 3px 8px;*/
+color:red;
+}
+.menu1 ul li:hover ul li a:hover {
+color:#ffffff; background:red;/*background: #ccd url(images/bullet1.gif) no-repeat 3px 8px;*/
+}
+.menu1 ul li:hover ul li a:hover.drop {
+/*background: #ccd url(images/bullet1.gif) no-repeat 3px 8px;*/
+color:red;
+}
+.menu1 ul li:hover ul li:hover ul {
+display:block; position:absolute; left:137px; top:-1px;
+}
+.menu1 ul li:hover ul li:hover ul.left {
+left:-153px;
+}
+
+
+
+/* specific to IE5.5 and IE6 browsers */
+.menu1 ul li a:hover ul {
+display:block;position:absolute;top:30px; t\op:33px; background:#fff;left:0; border-bottom:1px solid #000;
+}
+
+.menu1 ul li a:hover ul.endstop {
+left: -92px;
+}
+.menu1 ul li a:hover ul li a {
+display:block;background:#fff;color:#000; height:1px; line-height:15px; padding:4px 16px; width:137px; w\idth:120px; border:1px solid #000; border-bottom:0;
+}
+.menu1 ul li a:hover ul li a.drop {
+background:#ccd url(images/bullet1.gif) no-repeat 3px 8px; padding-bottom:4px;
+}
+.menu1 ul li a:hover ul li a ul {
+visibility:hidden; position:absolute; height:0; width:0;
+}
+.menu1 ul li a:hover ul li a:hover {
+color:#000; background: #ccd url(images/bullet1.gif) no-repeat 3px 8px;
+}
+.menu1 ul li a:hover ul li a:hover.drop {
+ background: #ccd url(images/bullet1.gif) no-repeat 3px 8px;
+}
+.menu1 ul li a:hover ul li a:hover ul {
+visibility:visible; position:absolute; top:0;color:#000; left:153px;
+}
+.menu1 ul li a:hover ul li a:hover ul.left {
+left:-153px;
+}

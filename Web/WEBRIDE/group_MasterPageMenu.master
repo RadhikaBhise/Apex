@@ -1,0 +1,98 @@
+<%@ Master Language="VB" CodeFile="group_MasterPageMenu.master.vb" Inherits="group_MasterPageMenu" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title><%=System.Web.Configuration.WebConfigurationManager.AppSettings("title")%></title>
+    <link href="CSS/layout.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/Menu.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/menu1.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript" src="JS/masterpg.js"></script>
+    <script language="javascript" type="text/javascript" src="JS/Menu.js"></script>
+    <script language="javascript" type="text/javascript">
+            window.onbeforeunload = function()
+    {
+        if(event.clientX>document.body.clientWidth&&event.clientY<0||event.altKey)
+    {
+    //window.event.returnValue = "At MTC we understand the importance of communication in today's world. With that in mind, we invite you to experience our online reservation system.Once you have created your account, you can place new reservations, modify existing reservations, review past trips and print receipts!";
+        }
+     }
+     </script>    
+</head>
+<body onload="MM_preloadImages('images/our_service_a.jpg','images/rates_a.jpg','images/fleet_a.jpg','images/company_a.jpg')">
+ 
+           <table width="808" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="30" colspan="2" align="right" valign="bottom"><img src="images/service_head.gif" alt="Service that will exceed your expectations" width="239" height="32" align="left" />
+    <div class="blue_14"><span style="color: #0085CC;"><br />
+    Reserve Your Limo at</span> &nbsp;<strong>718.522.1313&nbsp;</strong></div></td>
+  </tr>
+  <tr>
+    <td height="97" colspan="2" valign="top" background="images/head_bgr.jpg"><div class="menu_head" style="position:absolute; margin: -12px 0 0 210px;"><a href="index.aspx"><img class="png" style="background-image:url(images/logo_head.png);" src="images/blank.gif" width="123" height="123" border="0" /></a></div><div class="menu_head" style="position:absolute; margin: 23px 0 0 412px;"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('services','','images/our_service_a.jpg',1);expandMenu(null,'menu2',getPos(this,'Left'),getPos(this,'Top')+this.offsetHeight);"><img src="images/our_service.jpg" name="services" width="97" height="74" border="0" id="services" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('rates','','images/rates_a.jpg',1)"><img src="images/rates.jpg" name="rates" width="65" height="74" border="0" id="rates" /></a><a href="fleet.aspx" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('fleet','','images/fleet_a.jpg',1)"><img src="images/fleet.jpg" name="fleet" width="60" height="74" border="0" id="fleet" /></a><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('company','','images/company_a.jpg',1);expandMenu(null,'menu1',getPos(this,'Left'),getPos(this,'Top')+this.offsetHeight);"><img src="images/company.jpg" name="company" width="80" height="74" border="0" id="company" /></a></div></td>
+  </tr>   
+    <tr>
+    <td height="15" colspan="2"></td>
+  </tr>  
+    <tr>
+    <td colspan="2">
+                <table>
+                    <tr>
+                        <td class="HeaderMenuCell" onclick="javascript:window.location='group_orderform.aspx';" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">ORDER&nbsp;FORM</td>
+                        <td class="HeaderMenuCell" onclick="javascript:window.location='group_rideinquiry.aspx';" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">RIDE&nbsp;INQUIRY</td>
+<%--                    <td class="HeaderMenuCell" onclick="javascript:window.location='corp_ridehistory.aspx';" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">RIDE&nbsp;HISTORY</td>
+                        <td class="HeaderMenuCell" onclick="javascript:window.location='userprofile.aspx';" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">USER&nbsp;PROFILE</td>
+--%>                    <td class="HeaderMenuCell" onclick="javascript:window.location='group_login.aspx?msg=logout';" onmouseover="this.style.color='yellow'" onmouseout="this.style.color='white'">LOGOUT</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <asp:contentplaceholder id="content" runat="server">
+                </asp:contentplaceholder>
+            </td></tr>
+        <tr>
+            <td colspan="2" height="15px">
+            </td></tr>            
+                  <tr>
+    <td height="49" colspan="2" align="left" valign="top" background="images/foot_bgr.gif"><div class="menu_head" style="position:absolute; margin: -12px 0 0 130px;"><a href="index.aspx"><img class="png" style="background-image:url(images/logo_foot.png);" src="images/blank.gif" width="70" height="70" border="0" /></a></div><div class="menu_foot" style="position:absolute; margin: 18px 0 0 220px;"><a href="index.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact_us.aspx">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="reservation.aspx">Online Reservations</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onmouseover="expandMenu(null,'menu2',getPos(this,'Left'),getPos(this,'Top')+this.offsetHeight);">Our Services</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="price.aspx">Rates</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="fleet.aspx">Fleet</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="News.aspx">News</a></div></td>
+  </tr>
+  <tr>
+    <td align="left" class="main_text" style="color:#0088cf; padding-left:10px;">&copy;2007 APEX</td>
+    <td align="right" class="main_text" style="width: 544px"><a style="color:#0088cf;" href="http://www.alephcomputer.com">Designed by Aleph</a>&nbsp;&nbsp;&nbsp;</td>
+  </tr>
+        </table>
+            <div class="menu" id="menu1" style="WIDTH: 168px; HEIGHT: 1px; left: 496px; top: 328px;" onMouseOut="hideMe();"><IFRAME id="iframeMain" runat="server" style="Z-INDEX: -1; LEFT:0px; WIDTH: 168px; POSITION: absolute; TOP: 0px; HEIGHT: 108px" src="frame.aspx" frameBorder="0" scrolling="no"></IFRAME>
+       <table id="tablemenu1" border="0" cellspacing="0" cellpadding="0" style="width: 168px" runat="server">
+       <tr>
+       <td height="18px"><A onMouseOver="expandMenu('menu1');" style="WIDTH: 160px; HEIGHT: 18px" href="company_overview.aspx"><font class="LinkFont">&#149;&nbsp;Company Overview&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>
+       <tr>
+       <td height="18px"><A onMouseOver="expandMenu('menu1');" style="WIDTH: 160px; HEIGHT: 18px" href="customer_services.aspx"><font class="LinkFont">&#149;&nbsp;Customer Service commitment&nbsp;</font></A></td></tr>
+      <tr>
+       <td height="18px"><A onMouseOver="expandMenu('menu1');" style="WIDTH: 160px; HEIGHT: 18px" href="our_drivers.aspx"><font class="LinkFont">&#149;&nbsp;Our Drivers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>
+       <tr>
+       <td height="18px"><A onMouseOver="expandMenu('menu1');" style="WIDTH: 160px; HEIGHT: 18px" href="corporate_account.aspx" ><font class="LinkFont">&#149;&nbsp;Corporate Accounts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>                
+       <tr>
+       <td height="18px"><A onMouseOver="expandMenu('menu1');" style="WIDTH: 160px; HEIGHT: 18px" href="individual_account.aspx"><font class="LinkFont">&#149;&nbsp;Individual Accounts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>                      
+       <tr>
+       <td height="18px"><A onMouseOver="expandMenu('menu1');" style="WIDTH: 160px; HEIGHT: 18px" href="cancellation_policy.aspx"><font class="LinkFont">&#149;&nbsp;Cancellation Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>                
+ 	    </table></div>
+	   <div class="menu" id="menu2" style="HEIGHT: 1px; left: 336px; top: 328px; width: 136px;" onMouseOut="hideMe();"><IFRAME id="iframe1" style="Z-INDEX: -1; LEFT:0px; WIDTH: 136px; POSITION: absolute; TOP: 0px; HEIGHT: 90px" src="frame.aspx" frameBorder="0" scrolling="no"></IFRAME>
+	   <table id="tablemenu2" border="0" cellspacing="0" cellpadding="0" style="width: 136px; height: 72px;">
+       <tr>
+       <td height="18px" style="width: 136px"><A onMouseOver="expandMenu('menu2');" style="WIDTH: 160px; HEIGHT: 18px" href="global_travel.aspx"><font class="LinkFont">&#149;&nbsp;Global Travel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>
+       <tr>
+       <td height="18px" style="width: 136px"><A onMouseOver="expandMenu('menu2');" style="WIDTH: 160px; HEIGHT: 18px" href="airport_transfer.aspx"><font class="LinkFont">&#149;&nbsp;Airport Transfers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>
+      <tr>
+       <td height="18px" style="width: 136px"><A onMouseOver="expandMenu('menu2');" style="WIDTH: 160px; HEIGHT: 18px" href="convention_meeting.aspx"><font class="LinkFont">&#149;&nbsp;Conventions & Meetings</font></A></td></tr>
+       <tr>
+       <td height="18px" style="width: 136px"><A onMouseOver="expandMenu('menu2');" style="WIDTH: 160px; HEIGHT: 18px" href="hourly_charters.aspx"><font class="LinkFont">&#149;&nbsp;Hourly Charters&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>                
+       <tr>
+       <td height="18px" style="width: 136px"><A onMouseOver="expandMenu('menu2');" style="WIDTH: 160px; HEIGHT: 18px" href="special_occasions.aspx"><font class="LinkFont">&#149;&nbsp;Special Occasions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></A></td></tr>                           
+      </table>
+       </div>
+</body>
+</html>
+

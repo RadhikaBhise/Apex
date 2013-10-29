@@ -1,0 +1,141 @@
+﻿/*for Menu CSS*/
+.menu a:visited
+{ 
+	font-family: "Arial"; font-size: 11px;
+	text-decoration: none; font-weight: normal; 
+	color: #FFFFFF;	/*#151B11;*/ /*for click before color*/
+	background: #151B11;
+	width: 108px; 
+	padding-left: 8px; line-height: 18px;
+	border-color: #151B11 #151B11 #151B11 #151B11; 
+	border-style: solid; border-top-width: 1px; 
+	border-right-width: 1px; border-bottom-width: 1px; 
+	border-left-width: 1px; clip: rect()
+}
+
+.menu a:hover 
+{ 
+	font-family: "Arial"; font-size: 11px; 
+	text-decoration: none; font-weight: normal; 
+	color: #000000; background: red; width: 175px; 
+	padding-left: 8px; line-height: 18px; clip: rect()
+}
+	
+.menu .border 
+{ 
+	border: 1px solid #151B11; border-bottom: 1px solid #151B11; 
+	border-right: 1px solid #151B11;
+}
+	
+.menu .text 
+{ 
+	overflow: hidden; width: 220px; height: 18px;
+}
+	
+.menu .arrow 
+{ 
+	overflow: hidden; width: 15px; height: 18px; 
+	padding-left: 1px; padding-top: 3px; 
+}
+	
+.menu .arrow img 
+{ 
+	width: 6px; height: 7px; border: 0px; 
+}
+	
+.menu a 
+{ 
+	font-family: "Arial"; font-size: 11px; text-decoration: none; 
+	font-weight: normal; color: #151B11; background: #151B11; 
+	width: 160px; padding-left: 8px; clip: rect(); 
+	border-color:  #151B11 #151B11 #151B11 #151B11; 
+	border-style: solid; border-top-width: 1px; 
+	border-right-width: 1px; border-bottom-width: 1px; 
+	border-left-width: 1px; 
+	line-height: 18px
+}
+	
+.menu a:link 
+{ 
+	color: #FFFFFF; text-decoration: none
+}
+	
+.a 
+{ 
+	font-size: 12px; text-decoration: none
+}
+	
+.a:link 
+{ 
+	color: #FFFFFF; text-decoration: none
+}
+	
+.a:hover 
+{ 
+	text-decoration: underline;/*color:#000000*/
+}
+	
+.a:visited 
+{ 
+	color: yellow; text-decoration: none
+}
+
+.mm
+{
+	position: absolute; left: 0; top: 2; visibility: hidden;
+	background: #A08242; width: 100px; margin: 0px 0px; 
+	padding: 0px 0px; border: 1px silver solid; 
+	overflow: visible; clip: rect( )
+}
+
+.menu 
+{ 
+	position: absolute; 
+	left: 0; top: 2; 
+	visibility: hidden; 
+	background: #151B11;
+	width: 100px; margin: 1px 1px; 
+	padding: 0px; 
+	border: 1px silver Outset; 
+	overflow: visible; 
+	clip: rect()
+	/*background-color:#e7f3ff;
+	border:solid 1px black;
+	padding:0px;
+	padding-left:3px;
+	font-weight:bolder;*/
+}	
+	.css_menu
+{
+	background-color:#e7f3ff;
+	border:solid 1px black;
+	padding:0px;
+	padding-left:3px;
+	font-weight:bolder;
+}
+	
+
+.body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.BottomFont {
+	font-family: Arial;
+	font-size: 11px;
+}
+
+.BottomFont1 {
+	font-family: Arial;
+	font-size: 10px;
+}
+
+.LinkFont
+{
+	/*color:#FFFFFF;*/
+	font-family:Arial;
+	font-size:11px;
+	
+}

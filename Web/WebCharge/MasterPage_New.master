@@ -1,0 +1,124 @@
+<%@ Master Language="VB" CodeFile="MasterPage_New.master.vb" Inherits="MasterPage_New" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title> <%=system.Configuration.ConfigurationSettings.AppSettings("Title")%></title>
+      <link rel="stylesheet" type="text/css" href="CSS/layout.css" />
+      <style type="text/css">
+      body 
+{
+	background-color:#22201A;
+}
+            .h_font{
+      
+      	font-family: vendan ;
+	    font-size: 14px;
+	    color: #46160A;
+	    font-weight: bold;	    
+     }
+      .tb-bg{/*background-image:url(images/contact-bg.jpg)*/background-color:#c0b7a0;}
+      .bg-image
+{
+	background-image:url(images/small-bg.jpg);
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.bg{background-image:url(images/small-bg.jpg);}
+.bodyfont
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+	background-image:url(images/small-bg.jpg);
+}
+.bodyfont2
+{
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: bold;
+	background-image:url(images/small-bg.jpg);
+}
+.mainDiv{ 
+SCROLLBAR-FACE-COLOR:auto; 
+OVERFLOW: auto;
+ WIDTH: expression(document.body.clientWidth+20); 
+  HEIGHT: expression((document.body.clientHeight-this.offsetTop-20>this.children[0].offsetHeight)?(this.children[0].offsetHeight+20) : (document.body.clientHeight-this.offsetTop-20)) 
+  } 
+
+      </style>
+    <script language="javascript" type="text/javascript" src="JS/Report.js" ></script>
+    
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+//-->
+</script>
+</head>
+<body onload="MM_preloadImages('button-home02.gif','button-reservation02.gif','button-billing-reports02.gif')">
+<div align="center" style="background-color:#22201A;width:100%">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr><td ><img src="Images/title01.jpg" /></td></tr>
+  <tr><td background="Images/titlebg.jpg"><a href="http://www.csuglobal.com" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','Images/button-home02.gif',1)"><img src="Images/button-home.gif" alt="home" name="Image2" width="160" height="45" border="0" id="Image2" /></a><a href="http://www.csuglobal.com/beta" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','Images/button-reservation02.gif',1)"><img src="Images/button-reservation.gif" alt="reservation" name="Image3" width="250" height="45" border="0" id="Image3" /></a><a href="http://www.csuglobal.com/webcharge_beta" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','Images/button-billing-reports02.gif',1)"><img src="Images/button-billing-reports.gif" alt="billing/reports" name="Image4" width="250" height="45" border="0" id="Image4" /></a></td>
+  </tr>
+    <%-- <tr style="background-image:url(Images/title-online billing.jpg);width:700px;height:45px;" runat="server" id="welcome">                    
+                <td align="right" valign="middle" style="padding-right:60px;padding-top:10px"><font FACE="verdana" size="2">
+						<asp:Label ID="lbl_Time" Runat="server" />&nbsp;Eastern Standard Time&nbsp;<asp:Label ID="lbl_Date" Runat="Server" /></font>
+                </td></tr>--%>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 100%">
+  <tr align="center">
+    <td style="height: 239px" align="center" class="bg3">
+    <table border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                   <tr>
+                   <td width="100%" colspan="2" style="height: 206px">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+                       </tr>
+                       </table>
+    </td>
+  </tr>
+  </table>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr valign="top" align="center" style="width:800px">
+              <td class="bg4 bot-pad txt1" height="67" align="center" colspan="2">
+                <div style="height:20px">
+                  <a href="http://www.csuglobal.com?menu=sitemap" class="txt1 sub">Site Map</a>
+                </div>
+                <div style="height:20px">
+                  <a href="http://www.csuglobal.com?menu=policy" class="txt1 sub">CSU Privacy Policy / Agreement Content</a>
+                </div>
+                  Copyright 2005-2006 (c) <a href="http://www.csuglobal.com" class="sub txt1">Chauffeured Services Unlimited</a></td>
+            </tr>
+</table>
+</div>
+</body>
+</html>
+    

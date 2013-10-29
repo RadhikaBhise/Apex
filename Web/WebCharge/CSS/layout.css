@@ -1,0 +1,393 @@
+﻿body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+.png
+{
+   /*background-image: none ! important;*/
+   behavior: url('pngfix.htc');
+}
+
+
+.submenu_head, .submenu_head a{
+	font-size: 11px;
+	color: #0085cc;
+}
+.darkgray_14 {
+	font-size: 14px;
+	color: #5d5d5d;
+}
+.blue_18 {font-size: 18px; color: #0054a5; }
+.blue_14 {font-size: 14px; color: #0054a5; }
+.blue_14_b {font-size: 14px; color: #0054a5; font-weight:bold; }
+.darkgray_11 {font-size: 11px;color: #5d5d5d;}
+.gray_12_b {
+	font-size: 12px;
+	font-weight: bold;
+	color: #8e8e8e;
+}
+.editbox {
+border : 1px solid #008ad1;
+background-color : #FFFFFF;
+width : 120px;
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size : 10px;
+height : 17px;
+}
+.blue_13 {
+	font-size: 12px;
+	color: #14479e;
+}
+.menu_head, .menu_head a{
+	font-weight:bold;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.menu_foot, .menu_foot a{
+	font-weight:bold;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+.news_title {
+	font-size: 14px;
+	color: #0085CC;
+	font-weight: bold;
+}
+.news_text {
+	font-size: 11px;
+	color: #8e8e8e;
+}
+.news_text_dark {
+	font-size: 11px;
+	color: #636363;
+}
+.title {
+	font-size: 18px;
+	color: #5d5d5d;
+}
+.main_text {
+	font-size: 12px;
+	color: #71818c;}
+.read_more {
+	font-size: 12px;
+	color: #0050a5;
+	font-weight:bold;
+}
+.form_text {color:#666666;
+border: #008ad1 1px solid;
+background-color : #FFFFFF;
+width : 150px;
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size : 10px;
+height : 17px;
+}
+.form_text_area {color:#666666;
+border : 1px solid #008ad1;
+background-color : #FFFFFF;
+width : 280px;
+font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+font-size : 10px;
+}
+.autonow {
+	BORDER-RIGHT: #ffffff 1px solid; BACKGROUND-POSITION: right 50%; BORDER-TOP: #ffffff 1px solid; FLOAT: left; BORDER-LEFT: #ffffff 1px solid; WIDTH: 60px; CURSOR: pointer; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 60px
+}
+
+.header1{ font-size: 12px; font-weight:bold;color: #5d5d5d;}
+.header2{ font-size: 12px; font-weight:bold; color: #00ccff;text-decoration: underline;}
+.header3{ font-weight:bold; color: #00ccff; font-size:18px; font-family: 'Script MT Bold'; text-decoration: underline;}
+.header4{  font-size:11pt; font-family: 'Script MT Bold';}
+.header5{  font-size:11pt; font-weight:bold;font-family:'Times New Roman'; text-decoration: underline}
+.header6{  font-size:16px; font-weight:bold;font-family:Arial; }
+.text1{  font-size:10pt; font-family:Arial; }
+
+.linkstyle 
+{
+	font-size: x-small;
+	color: #FFFFFF;
+}
+
+.loginfont
+{
+	font-family:"Verdana, Arial, Helvetica, sans-serif" ;
+	font-size:13px;
+}
+
+.loignhead
+{
+	font-family:"Verdana, Arial, Helvetica, sans-serif" ;
+	font-size:15px;
+}
+
+.mainfont
+{
+	font-family:Arial;
+	font-size:12px;
+}
+
+.GridFont
+{
+	font-family:Arial;
+	font-size:11px;
+	color:#000000;
+}
+/*added by lily 12/13/2007*/
+.LinkFont
+{
+	/*color:#FFFFFF;*/
+	font-family:Arial;
+	font-size:11px;
+	
+}
+/*for Menu CSS*/
+.menu a:visited
+{ 
+	font-family: "Arial"; font-size: 11px;
+	text-decoration: none; font-weight: normal; 
+	color: #FFFFFF;	/*#151B11;*/ /*for click before color*/
+	background: #151B11;
+	width: 108px; 
+	padding-left: 8px; line-height: 18px;
+	border-color: #151B11 #151B11 #151B11 #151B11; 
+	border-style: solid; border-top-width: 1px; 
+	border-right-width: 1px; border-bottom-width: 1px; 
+	border-left-width: 1px; clip: rect()
+}
+
+.menu a:hover 
+{ 
+	font-family: "Arial"; font-size: 11px; 
+	text-decoration: none; font-weight: normal; 
+	color: #000000; background: red; width: 175px; 
+	padding-left: 8px; line-height: 18px; clip: rect()
+}
+	
+.menu .border 
+{ 
+	border: 1px solid #151B11; border-bottom: 1px solid #151B11; 
+	border-right: 1px solid #151B11;
+}
+	
+.menu .text 
+{ 
+	overflow: hidden; width: 220px; height: 18px;
+}
+	
+.menu .arrow 
+{ 
+	overflow: hidden; width: 15px; height: 18px; 
+	padding-left: 1px; padding-top: 3px; 
+}
+	
+.menu .arrow img 
+{ 
+	width: 6px; height: 7px; border: 0px; 
+}
+	
+.menu a 
+{ 
+	font-family: "Arial"; font-size: 11px; text-decoration: none; 
+	font-weight: normal; color: #151B11; background: #151B11; 
+	width: 160px; padding-left: 8px; clip: rect(); 
+	border-color:  #151B11 #151B11 #151B11 #151B11; 
+	border-style: solid; border-top-width: 1px; 
+	border-right-width: 1px; border-bottom-width: 1px; 
+	border-left-width: 1px; 
+	line-height: 18px
+}
+	
+.menu a:link 
+{ 
+	color: #FFFFFF; text-decoration: none
+}
+.menu 
+{ 
+	position: absolute; 
+	left: 0; top: 2; 
+	visibility: hidden; 
+	background: #151B11;
+	width: 100px; margin: 1px 1px; 
+	padding: 0px; 
+	border: 1px silver Outset; 
+	overflow: visible; 
+	clip: rect()
+
+}	
+
+
+/*add by joey	12/14/2007*/
+.css_header
+{
+	font-family:Arial;
+	font-size:15px;
+	font-weight :bold;
+	height: 35px;
+	text-align:left;
+	margin-left:50px;		
+	padding-top:10px;
+	
+}
+
+.css_title
+{
+	background-color:#c0c0c0;
+	font-size:11px;
+	font-weight :bold;
+	height: 24px;
+	text-align:left;
+}
+.css_desc 
+{	
+    font-family:Corbel;
+    background-color:#018bd3;
+    border:solid 0px #ffffff;
+    padding:2px;
+    color:#FFFFFF;
+    font-size:10pt;
+    font-weight :bold;
+    height: 23px;
+    text-align:left;
+    width:160px;
+  
+	/*font-family: Arial, Helvetica, sans-serif;
+	background-color:#3269d3;
+	border:solid 0px #ffffff;
+	padding:2px;
+	text-align:left;
+	height: 23px;width: 130px;
+	font-weight:bold;
+	font-size: 12px;
+	color: #FFFFFF;	*/
+}
+.css_alterdesc
+{
+	font-family:Arial;
+	font-size:11px;
+	background-color:#e7e7e7;
+	border:solid 0px #6699cc;
+	padding:2px;
+	text-align:left;
+}
+.css_itemdesc
+{
+	font-family:Arial;
+	font-size:11px;
+	background-color:#f9f9f9;
+	border:solid 0px #6699cc;
+	padding:2px;
+	text-align:left;
+}
+.css_pagedesc
+{
+	font-family:Arial;
+	font-size:11px;
+	background-color:#f9f9f9;
+	border:solid 0px #6699cc;
+	padding:2px;
+	text-align:left;
+}
+.css_footdesc
+{
+	font-family:Arial;
+	font-size:11px;
+	background-color:DarkBlue;
+	border:solid 0px #6699cc;
+	padding:2px;
+	text-align:left;
+}
+.css_font
+{
+	font-family:Arial;
+	font-size:11px;
+	
+}
+.font2
+{
+	font-family:Arial;
+	font-size:15px;
+	color:#ffffff;
+	background-color:DarkBlue;
+}
+.font3
+{
+	font-family:Arial;
+	background-color:lightgrey;
+	font-size:11px;
+}
+.css_lable 
+{
+	font-family:Arial;
+	font-size:12px;
+	color:Green;
+	text-align:left;
+	width:160px;
+	
+}
+.css_desc2 
+{	
+    font-family:Corbel;
+    background-color:#018bd3;
+    border:solid 0px #ffffff;
+    padding:2px;
+    color:#FFFFFF;
+    font-size:10pt;
+    font-weight :bold;
+    height: 23px;
+    text-align:left;
+}
+
+.rptmenu_font
+{
+	font-family:Arial;
+	font-size:13px;
+}
+/*	AlephWeb Header Menu Cell Style	*/
+.HeaderMenuCell
+{
+	BORDER-RIGHT: gray 1px solid;
+	BORDER-TOP: gray 1px solid;
+	BORDER-LEFT: gray 1px solid;
+	BORDER-BOTTOM: gray 1px solid;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#018bd3;
+	text-align:center;
+	color:white;
+	cursor:hand;
+	font-size:9pt;
+	font-weight:bold;
+	font-family:Corbel;
+	/*BORDER-RIGHT: gray 1px solid;
+	BORDER-TOP: gray 1px solid;
+	BORDER-LEFT: gray 1px solid;
+	BORDER-BOTTOM: gray 1px solid;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#3269d3;
+	text-align:center;
+	color:white;
+	cursor:hand;
+	font-size:10px;
+	font-weight:bold;*/
+}
